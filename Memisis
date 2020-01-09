@@ -1,0 +1,254 @@
+(base) C:\Users\Welcome>activate abhijit_env
+
+(abhijit_env) C:\Users\Welcome>pip install mimesis
+Requirement already satisfied: mimesis in c:\users\welcome\appdata\local\programs\python\python37-32\lib\site-packages (3.3.0)
+
+(abhijit_env) C:\Users\Welcome>python3
+Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 01:54:44) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from mimesis import Person
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'mimesis'
+>>> exit
+Use exit() or Ctrl-Z plus Return to exit
+>>> ^Z
+
+
+(abhijit_env) C:\Users\Welcome>python
+Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 19:29:22) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from mimesis import Person
+>>> from mimesis.enums import Gender
+>>> person = Person ('en')
+>>> person.full_name(gender=Gender.MALE)
+'Damion Sandoval'
+>>> from mimesis import Generic
+>>> g = Generic ('pl')
+>>> g.person.full_name()
+'Horacy Gierymski'
+>>> g.person.full_name()
+'Teodor Raczyński'
+>>> g.person.full_name()
+'Brygida Wasiak'
+>>> g.person.blood_type()
+'B+'
+>>> for i in range(100):
+... Name = g.person.full_name()
+  File "<stdin>", line 2
+    Name = g.person.full_name()
+       ^
+IndentationError: expected an indented block
+>>> for i in range(100):
+...     Name = .person.full_name()
+  File "<stdin>", line 2
+    Name = .person.full_name()
+           ^
+SyntaxError: invalid syntax
+>>> for i in range(100):
+...     Name = g.person.full_name()
+...     print(Name)
+...     print(Name)
+...
+...
+Leszek Terlecki
+Leszek Terlecki
+Bożena Dąbrowska
+Bożena Dąbrowska
+Pelagiusz Orski
+Pelagiusz Orski
+Szczepan Cichy
+Szczepan Cichy
+Kornel Karpiński
+Kornel Karpiński
+Aga Frydrychowicz
+Aga Frydrychowicz
+Marzanna Odrzywolska
+Marzanna Odrzywolska
+Albina Witczak
+Albina Witczak
+Stefan Imieliński
+Stefan Imieliński
+Danisława Perkowska
+Danisława Perkowska
+Gaweł Fijewski
+Gaweł Fijewski
+Kalina Czachowska
+Kalina Czachowska
+Izabela Kwietniewska
+Izabela Kwietniewska
+Julia Piskorska
+Julia Piskorska
+Bona Zawadzki
+Bona Zawadzki
+Tamara Kucharska
+Tamara Kucharska
+Przemek Łagowski
+Przemek Łagowski
+Anastazja Janiszewska
+Anastazja Janiszewska
+Marlena Różańska
+Marlena Różańska
+Magda Różewicz
+Magda Różewicz
+Renarda Sytek
+Renarda Sytek
+Celina Gutowska
+Celina Gutowska
+Lusia Kukiz
+Lusia Kukiz
+Hugon Duchnowski
+Hugon Duchnowski
+Odetta Grabińska
+Odetta Grabińska
+Kinga Partyka
+Kinga Partyka
+Paula Witczak
+Paula Witczak
+Karol Dudek
+Karol Dudek
+Danusia Skoczylas
+Danusia Skoczylas
+Zbyszko Grocholski
+Zbyszko Grocholski
+Mariola Kuraś
+Mariola Kuraś
+Danusia Kotowska
+Danusia Kotowska
+Alberta Bakuła
+Alberta Bakuła
+Elena Czachor
+Elena Czachor
+Daromir Śmiarowski
+Daromir Śmiarowski
+Antoniusz Warzager
+Antoniusz Warzager
+Matylda Piecha
+Matylda Piecha
+Otylia Majerska
+Otylia Majerska
+Wiktoria Smolar
+Wiktoria Smolar
+Edward Gosiewski
+Edward Gosiewski
+Ambrozja Dąbek
+Ambrozja Dąbek
+Majka Radzińska
+Majka Radzińska
+Leon Stępień
+Leon Stępień
+Dagmara Waglewska
+Dagmara Waglewska
+Przybysława Gogolewska
+Przybysława Gogolewska
+Irka Iwańska
+Irka Iwańska
+Leokadiusz Maculewicz
+Leokadiusz Maculewicz
+Aleksy Krupski
+Aleksy Krupski
+Malina Gancarczyk
+Malina Gancarczyk
+Zenek Walicki
+Zenek Walicki
+Janina Kaczorowska
+Janina Kaczorowska
+Adolf Grocholski
+Adolf Grocholski
+Radomir Rychlewski
+Radomir Rychlewski
+Jerzy Bieniasz
+Jerzy Bieniasz
+Zenobiusz Kłosowski
+Zenobiusz Kłosowski
+Zygfryda Zielińska
+Zygfryda Zielińska
+Lilia Zając
+Lilia Zając
+Fabiana Wasiak
+Fabiana Wasiak
+Dionizy Frydrychowicz
+Dionizy Frydrychowicz
+Jędrek Kijowski
+Jędrek Kijowski
+Zosia Giergielewicz
+Zosia Giergielewicz
+Antonia Piętka
+Antonia Piętka
+Diana Siudek
+Diana Siudek
+Teodor Bohosiewicz
+Teodor Bohosiewicz
+Sara Pietrzak
+Sara Pietrzak
+Waldemar Gardocki
+Waldemar Gardocki
+Radomir Dębicki
+Radomir Dębicki
+Joachim Żyborski
+Joachim Żyborski
+Gabryjel Matuszewski
+Gabryjel Matuszewski
+Kostek Narzymski
+Kostek Narzymski
+Czesława Mioduszewska
+Czesława Mioduszewska
+Martyna Gawron
+Martyna Gawron
+Konrad Majerski
+Konrad Majerski
+Justyna Siudym
+Justyna Siudym
+Zenek Perkowski
+Zenek Perkowski
+Hermenegilda Dobiecka
+Hermenegilda Dobiecka
+Horacy Chmiel
+Horacy Chmiel
+Bianka Bielecka
+Bianka Bielecka
+Amelia Wójczyk
+Amelia Wójczyk
+Franciszka Przypkowska
+Franciszka Przypkowska
+Darek Ambroziak
+Darek Ambroziak
+Wincent Topolski
+Wincent Topolski
+Renata Dziubdziela
+Renata Dziubdziela
+Bernarda Rączkowska
+Bernarda Rączkowska
+Andżelika Zawiślak
+Andżelika Zawiślak
+Julian Szymański
+Julian Szymański
+Filip Rafalski
+Filip Rafalski
+Laurencja Cholewczyńska
+Laurencja Cholewczyńska
+Leokadia Tomankiewicz
+Leokadia Tomankiewicz
+Iwan Olejniczak
+Iwan Olejniczak
+Franciszek Popek
+Franciszek Popek
+Anatol Chuchrowski
+Anatol Chuchrowski
+Jarek Drobczyński
+Jarek Drobczyński
+Tobiasz Matlak
+Tobiasz Matlak
+Donald Dziurawiec
+Donald Dziurawiec
+Beata Żalińska
+Beata Żalińska
+Radosława Jaśkiewicz
+Radosława Jaśkiewicz
+Sławomir Rusek
+Sławomir Rusek
+Miłosz Smolik
+Miłosz Smolik
+Zbyszek Brzana
+Zbyszek Brzana
+>>>
